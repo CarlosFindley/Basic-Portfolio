@@ -5,13 +5,14 @@ body {
     background-image: url(../_images/swirlPattern.png); /* image from https://www.toptal.com/designers/subtlepatterns/page/9/ */
 }
 
-/* header and navigation bar */
+/* header and navigation bar start */
 header {
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 2px solid #ccc;
     background: #ffffff;
     display: flow-root;
+    
 }
 
 .logoNav {
@@ -31,9 +32,17 @@ header {
     text-decoration: none;
 }
 
+#logo:hover {
+    background: #5e7f7e
+}
+
 nav {
     float: right;
     padding: 33px 0 33px 0;
+}
+
+nav a:hover {
+    color: #5e7f7e
 }
 
 nav a {
@@ -47,11 +56,11 @@ nav a {
 nav a:first-child {
     border-left: 0 none;
   }
+/* header and navigation bar end */
 
 /* general content */
 .sectionContent {
     margin: 0 auto;
-    display: flow-root;
     width: 100%;
     max-width: 960px;
     background: #ffffff;
@@ -59,34 +68,26 @@ nav a:first-child {
     border-color: #ddd;
 }
 
+.h1Title {
+    padding: 25px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
 h1 {
-    font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 2em;
-    background: #4aaaa5;
-    color: #ffffff;
-    float: left;
-    padding: 20px;
-}
-
-.contentH2 {
-    margin: 0 auto;
-    width: 90%;
-}
-
-h1 {
+    font-weight: 600;
     color: #4aaaa5;
-    padding: 20px;
-    font-family: 'Georgia', Times, "Times New Roman", serif;
-    font-size: 2em;
-}
-
-hr {
-    color: #a9a7a8;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #dddddd;  
 }
 
 .aboutMePic {
-    padding: 20px;
+    padding: 25px;
+    padding-left: 20px;
     float: left;
+    margin-top: 4.5px;
 }
 
 p {
@@ -96,28 +97,90 @@ p {
 
 footer {
     width: 100%;
-    background: #666666;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    color: #ffffff;
+    clear: both;
+    position: fixed;
+    margin: 0 auto;
+    background: #666;
+    color: #ccc;
+    font-size: .6em;
     border-top: 7px solid;
     border-color: #4aaaa5;
-    font-size: .6em;
+    text-align: center;
     margin-top: 30px;
-    clear: both;
-}
-
-.footerText {
-    vertical-align: bottom;
-    padding-top: 30px;
-    padding-bottom: 10px;
 }
 
 /* for contact info page */
-.inputfield {
-    border:1px solid #cccccc;
-    padding-top:3px;
-    padding-bottom:3px;
-    padding-left:5px;
-    margin:3px 13px 3px 13px;
+form {
+    padding: 25px;
+}
+
+.contactForm ul {
+    margin-bottom: 20px;
+  }
+
+.contactForm li {
+    margin-bottom: 20px;
+  }
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+/* portfolio page */
+.workCard {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }

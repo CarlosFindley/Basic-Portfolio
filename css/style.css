@@ -2,7 +2,7 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #777777;
     font-size: 1em;
-    background-image: url(../_images/swirlPattern.png); /* image from Toptal.com, Swirl made by Uday. */
+    background-image: url(../images/swirlPattern.png); /* image from Toptal.com, Swirl made by Uday. */
 }
 
 /* header and navigation bar start */
